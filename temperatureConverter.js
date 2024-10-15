@@ -8,11 +8,8 @@ document
     const fromUnit = document.getElementById("temperatureUnit").value;
     const toUnit = document.getElementById("temperatureConvertTo").value;
 
-    console.log(temperatureInput, fromUnit, toUnit);
-
     // Validate if the input is a valid number
     const temperature = parseFloat(temperatureInput);
-    console.log(temperature);
     if (isNaN(temperature)) {
       document.getElementById("temperature-result").innerText =
         "Please enter a valid number for temperature.";
@@ -24,7 +21,6 @@ document
     // Conversion logic
     if (fromUnit === "celsius") {
       if (toUnit === "fahrenheit") {
-        console.log("inside");
         convertedTemperature = (temperature * 9) / 5 + 32;
       } else if (toUnit === "kelvin") {
         convertedTemperature = temperature + 273.15;
