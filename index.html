@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <div>
+      <h1>Unit Converter</h1>
+      <h2>Length</h2>
+      <form id="unit-converter">
+        <label for="length">Enter the length to convert</label>
+        <input type="text" id="length" name="length" required /><br /><br />
+        <label for="unit">Unit to Convert from</label>
+        <select id="unit" name="unit" required>
+          <option value="millimeter">millimeter</option>
+          <option value="centimeter">centimeter</option>
+          <option value="meter">meter</option>
+          <option value="kilometer">kilometer</option>
+          <option value="inch">inch</option>
+          <option value="foot">foot</option>
+          <option value="yard">yard</option>
+          <option value="mile">mile</option></select
+        ><br /><br />
+        <label for="convertTo">Unit to convert to</label>
+        <select id="convertTo" name="convertTo" required>
+          <option value="millimeter">millimeter</option>
+          <option value="centimeter">centimeter</option>
+          <option value="meter">meter</option>
+          <option value="kilometer">kilometer</option>
+          <option value="inch">inch</option>
+          <option value="foot">foot</option>
+          <option value="yard">yard</option>
+          <option value="mile">mile</option></select
+        ><br /><br />
+        <input type="submit" value="Convert" />
+      </form>
+      <div id="result" style="margin-top: 20px; font-weight: bold"></div>
+      <!-- Result Display -->
+
+      <h2>Weight</h2>
+      <form id="weight-converter">
+        <label for="weight">Enter the weight to convert</label>
+        <input type="text" id="weight" name="weight" required /><br /><br />
+        <label for="weightUnit">Unit to Convert from</label>
+        <select id="weightUnit" name="weightUnit" required>
+          <option value="grams">grams</option>
+          <option value="kilograms">kilograms</option>
+          <option value="ponds">ponds</option>
+          <option value="ounces">ounces</option></select
+        ><br /><br />
+        <label for="weightConvertTo">Unit to Convert from</label>
+        <select id="weightConvertTo" name="weightConvertTo" required>
+          <option value="grams">grams</option>
+          <option value="kilograms">kilograms</option>
+          <option value="ponds">ponds</option>
+          <option value="ounces">ounces</option></select
+        ><br /><br />
+        <input type="submit" value="Convert" />
+      </form>
+      <div id="weight-result" style="margin-top: 20px; font-weight: bold"></div>
+
+      <h2>Temperature</h2>
+      <form id="temperature-converter">
+        <label for="temperature">Enter the temperature to convert</label>
+        <input
+          type="text"
+          id="temperature"
+          name="temperature"
+          required
+        /><br /><br />
+        <label for="temperatureUnit">Unit to Convert from</label>
+        <select id="temperatureUnit" name="temperatureUnit" required>
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option></select
+        ><br /><br />
+        <label for="temperatureConvertTo">Unit to Convert from</label>
+        <select id="temperatureConvertTo" name="temperatureConvertTo" required>
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option></select
+        ><br /><br />
+        <input type="submit" value="Convert" />
+      </form>
+      <div
+        id="temperature-result"
+        style="margin-top: 20px; font-weight: bold"
+      ></div>
+    </div>
+
+    <script src="lengthConverter.js"></script>
+    <script src="weightConverter.js"></script>
+    <script src="temperatureConverter.js"></script>
+  </body>
+</html>
